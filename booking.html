@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Project | Your Online Buddy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #f9fafb; color: #111827; }
+
+        header { background-color: #ffffff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #111827; text-decoration: none; }
+        .logo span { color: #4f46e5; }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav a { text-decoration: none; color: #4b5563; font-weight: 600; font-size: 0.95rem; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: #4f46e5; }
+        
+        .page-header { background-color: #111827; color: #ffffff; padding: 60px 5%; text-align: center; border-bottom: 6px solid #4f46e5; }
+        .page-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; }
+        .page-header p { font-size: 1.1rem; color: #d1d5db; max-width: 600px; margin: 0 auto; }
+
+        .booking-options { padding: 60px 5%; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .option-card { background: #ffffff; border-radius: 12px; padding: 40px; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; width: 350px; }
+        .option-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #111827; }
+        .option-card p { color: #4b5563; margin-bottom: 30px; line-height: 1.5; font-size: 0.95rem; }
+        
+        .btn-insta { display: block; padding: 15px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; text-decoration: none; font-weight: 800; border-radius: 8px; font-size: 1.1rem; transition: opacity 0.3s; }
+        .btn-insta:hover { opacity: 0.9; }
+        
+        .btn-email { display: block; padding: 15px; background: #4f46e5; color: white; text-decoration: none; font-weight: 800; border-radius: 8px; font-size: 1.1rem; transition: background 0.3s; }
+        .btn-email:hover { background: #4338ca; }
+
+        footer { background-color: #111827; color: #9ca3af; text-align: center; padding: 40px 5%; margin-top: 40px; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Your Online <span>Buddy</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="partner.html">Partner Program</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Let's Get Started</h1>
+        <p>Choose how you would like to connect with us to kick off your project.</p>
+    </div>
+
+    <section class="booking-options">
+        <div class="option-card">
+            <h3>💬 Chat on Instagram</h3>
+            <p>Prefer a quick chat? Send us a DM on Instagram to discuss your business needs, ask questions, and share your vision instantly.</p>
+            <a href="https://instagram.com/YourOnlineBuddy.in" target="_blank" class="btn-insta">Message @YourOnlineBuddy.in</a>
+        </div>
+
+        <div class="option-card">
+            <h3>✉️ Submit via Email</h3>
+            <p>Ready to go? Click below to open a pre-filled email draft. Just answer the quick questions in the draft and hit send!</p>
+            <a href="mailto:youronlinebuddy.in@gmail.com?subject=New%20Project%20Inquiry:%20Your%20Online%20Buddy&body=Hello,%20I%20am%20interested%20in%20taking%20my%20business%20online.%0D%0A%0D%0A1.%20Business/Creator%20Name:%0D%0A2.%20What%20does%20your%20business%20do?:%0D%0A3.%20Which%20package%20are%20you%20interested%20in?%20(Starter/Growth/Domination):%0D%0A4.%20Contact%20Number:%0D%0A5.%20Buddy%20Discount%20Code%20(Leave%20blank%20if%20none):%0D%0A%0D%0AThank%20you!" class="btn-email">Open Email Form</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Email: youronlinebuddy.in@gmail.com | Instagram: @YourOnlineBuddy.in</p>
+        <p>&copy; 2026 Your Online Buddy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
