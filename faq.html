@@ -32,4 +32,74 @@
 
         /* Page Header */
         .page-header { background-color: #111827; color: #ffffff; padding: 60px 5%; text-align: center; border-bottom: 6px solid #4f46e5; }
-        .page-header h1 { font
+        .page-header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 15px; }
+        .page-header p { font-size: 1.1rem; color: #d1d5db; max-width: 600px; margin: 0 auto; }
+
+        /* FAQ Section */
+        .faq-section { padding: 60px 5%; max-width: 800px; margin: 0 auto; }
+        
+        .faq-item { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 15px; padding: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
+        .faq-item:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .faq-item h3 { color: #4f46e5; margin-bottom: 10px; font-size: 1.2rem; }
+        .faq-item p { color: #4b5563; font-size: 0.95rem; line-height: 1.6; }
+
+        /* Footer */
+        footer { background-color: #111827; color: #9ca3af; text-align: center; padding: 40px 5%; margin-top: 40px; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png?v=2" alt="Your Online Buddy Logo">
+            Your Online <span>Buddy</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="partner.html">Partner Program</a></li>
+            </ul>
+        </nav>
+        <a href="booking.html" class="btn">Contact Us</a>
+    </header>
+
+    <div class="page-header">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about our services, pricing, and process.</p>
+    </div>
+
+    <section class="faq-section">
+        <div class="faq-item">
+            <h3>How does the 50/50 payment split work?</h3>
+            <p>We require a 50% non-refundable advance payment to begin building your website. The remaining 50% is only collected after the project is completed to your satisfaction and ready to be launched live.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is included in the "1-Year Support"?</h3>
+            <p>Our included 1-Year Support covers technical maintenance, ensuring your site stays online, bug fixes, and minor text or image swaps (like changing a menu price). It does not include building entirely new pages from scratch.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is the Social Media Launch Kit?</h3>
+            <p>The Launch Kit is a one-time delivery of high-quality graphics and/or reels included in your web package. It is designed to ensure your social media profiles look professional and active on the day your website launches. If you want us to post every month, you can sign up for a Monthly Retainer.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I use a Buddy Discount Code?</h3>
+            <p>If a friend or partner gave you a Buddy Code, simply mention it when you message us or paste it into the booking email form. Using a valid code automatically grants you the Social Media Launch Kit for free alongside your website package.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you offer on-site video shoots?</h3>
+            <p>Yes! We offer on-site shooting and content creation exclusively for businesses located in the Mumbai, Navi Mumbai, and Thane regions (from Virar to Churchgate, CST to Thane, and up to Panvel).</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Email: youronlinebuddy.in@gmail.com | Instagram: @YourOnlineBuddy.in</p>
+        <p>&copy; 2026 Your Online Buddy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
