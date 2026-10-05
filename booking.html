@@ -7,17 +7,24 @@
     <!-- SEO Tags -->
     <title>Start Your Project | Your Online Buddy</title>
     <meta name="description" content="Book your premium local business website package with Your Online Buddy. Choose from Starter, Growth, or Domination tiers to establish your digital presence in Mumbai and Thane.">
-    <meta name="keywords" content="website builder Mumbai, web design Navi Mumbai, local business website, SEO services Thane, Your Online Buddy booking">
-    <meta name="author" content="Your Online Buddy">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png?v=2">
+    <link rel="shortcut icon" href="logo.png?v=2">
+    
+    <!-- Google Font (Safe for GitHub Pages) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         body { background-color: #f9fafb; color: #111827; }
 
         header { background-color: #ffffff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: #111827; text-decoration: none; }
+        
+        .logo { font-size: 1.5rem; font-weight: 800; color: #111827; text-decoration: none; display: flex; align-items: center; gap: 10px; }
         .logo span { color: #4f46e5; }
+        .logo img { height: 35px; width: auto; border-radius: 6px; }
+        
         nav ul { list-style: none; display: flex; gap: 25px; }
         nav a { text-decoration: none; color: #4b5563; font-weight: 600; font-size: 0.95rem; transition: color 0.3s; }
         nav a:hover, nav a.active { color: #4f46e5; }
@@ -74,7 +81,10 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">Your Online <span>Buddy</span></a>
+        <a href="index.html" class="logo">
+            <img src="logo.png?v=2" alt="Your Online Buddy Logo">
+            Your Online <span>Buddy</span>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
