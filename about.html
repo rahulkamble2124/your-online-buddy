@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Your Online Buddy</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png?v=2">
+    <link rel="shortcut icon" href="logo.png?v=2">
+    
+    <!-- Google Font (Safe for GitHub Pages) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         body { background-color: #f9fafb; color: #111827; }
 
         header { background-color: #ffffff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: #111827; text-decoration: none; }
+        
+        /* Updated Logo Class for Image Integration */
+        .logo { font-size: 1.5rem; font-weight: 800; color: #111827; text-decoration: none; display: flex; align-items: center; gap: 10px; }
         .logo span { color: #4f46e5; }
+        .logo img { height: 35px; width: auto; border-radius: 6px; }
+        
         nav ul { list-style: none; display: flex; gap: 25px; }
         nav a { text-decoration: none; color: #4b5563; font-weight: 600; font-size: 0.95rem; transition: color 0.3s; }
         nav a:hover, nav a.active { color: #4f46e5; }
@@ -44,19 +53,21 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
-        <img src="logo.png" alt="Your Online Buddy Logo" style="height: 35px; width: auto; border-radius: 6px;">Your Online <span>Buddy</span>
+        <a href="index.html" class="logo">
+            <img src="logo.png?v=2" alt="Your Online Buddy Logo">
+            Your Online <span>Buddy</span>
         </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="packages.html">Packages</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="partner.html">Partner Program</a></li>
             </ul>
         </nav>
-        <a href="mailto:youronlinebuddy.in@gmail.com" class="btn">Contact Us</a>
+        <a href="booking.html" class="btn">Contact Us</a>
     </header>
 
     <div class="page-header">
