@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Tags -->
     <title>Packages & Pricing | Your Online Buddy</title>
+    <meta name="description" content="Transparent pricing for local business websites. Choose from our Starter, Growth, or Domination packages to elevate your digital presence today.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png?v=2">
+    <link rel="shortcut icon" href="logo.png?v=2">
+    
+    <!-- Google Font (Safe for GitHub Pages) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
         * {
             margin: 0;
             padding: 0;
@@ -32,15 +41,25 @@
             z-index: 100;
         }
 
+        /* Updated Logo Class for Image Integration */
         .logo {
             font-size: 1.5rem;
             font-weight: 800;
             color: #111827;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .logo span {
             color: #4f46e5;
+        }
+
+        .logo img {
+            height: 35px;
+            width: auto;
+            border-radius: 6px;
         }
 
         nav ul {
@@ -271,17 +290,21 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">Your Online <span>Buddy</span></a>
+        <a href="index.html" class="logo">
+            <img src="logo.png?v=2" alt="Your Online Buddy Logo">
+            Your Online <span>Buddy</span>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="packages.html" class="active">Packages</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="partner.html">Partner Program</a></li>
             </ul>
         </nav>
-        <a href="mailto:youronlinebuddy.in@gmail.com" class="btn">Contact Us</a>
+        <a href="booking.html" class="btn">Contact Us</a>
     </header>
 
     <div class="page-header">
@@ -303,7 +326,7 @@
                     <li><strong>1-Year Web Support</strong></li>
                     <li>Launch Kit: 3 Posts</li>
                 </ul>
-                <a href="booking.html">Get Started</a>
+                <a href="booking.html" class="btn btn-full">Get Started</a>
             </div>
 
             <!-- Growth -->
@@ -318,7 +341,7 @@
                     <li><strong>1-Year Web Support</strong></li>
                     <li>Launch Kit: 7 Posts + 1 Reel</li>
                 </ul>
-                <a href="booking.html">Get Started</a>
+                <a href="booking.html" class="btn btn-full">Get Started</a>
             </div>
 
             <!-- Domination -->
@@ -333,8 +356,41 @@
                     <li><strong>1-Year Priority Support</strong></li>
                     <li>Launch Kit: 12 Posts + 3 Reels</li>
                 </ul>
-                <a href="booking.html">Get Started</a>
+                <a href="booking.html" class="btn btn-full">Get Started</a>
             </div>
         </div>
         
-        <p class="pricing-note">* Note: Prices shown are base rates. Final pricing may vary depending upon the complexity and custom requirements
+        <p class="pricing-note">* Note: Prices shown are base rates. Final pricing may vary depending upon the complexity and custom requirements of your project.</p>
+
+        <!-- Add-ons -->
+        <div class="addons-section">
+            <h3>📱 Monthly Social Add-Ons & Ads</h3>
+            <div class="addons-grid">
+                <div class="addon-item">
+                    <p><strong>Monthly Social Retainers:</strong></p>
+                    <p>Client-Provided Footage: ₹5,000/mo<br>
+                    We Shoot on Location: ₹10,000/mo</p>
+                </div>
+                <div class="addon-item">
+                    <p><strong>A La Carte Content:</strong></p>
+                    <p>Single Graphic Post: ₹400<br>
+                    Single Edited Reel: ₹800</p>
+                </div>
+                <div class="addon-item">
+                    <p><strong>Google Ads Management:</strong></p>
+                    <p>Setup from ₹2,500 + Ad Spend. We build and manage campaigns to guarantee traffic.</p>
+                </div>
+            </div>
+            <div class="regional-note">
+                * Note: Site visits for shoots are exclusively available in Mumbai, Navi Mumbai, and Thane regions (Coverage: Virar to Churchgate, CST to Thane, and up to Panvel).
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Email: youronlinebuddy.in@gmail.com | Instagram: @YourOnlineBuddy.in</p>
+        <p>&copy; 2026 Your Online Buddy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
