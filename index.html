@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Tags -->
     <title>Your Online Buddy | Web Agency</title>
+    <meta name="description" content="Take your local business online today with Your Online Buddy. We build premium, fast-loading websites and provide social media launch kits for businesses in Mumbai and Thane.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png?v=2">
+    <link rel="shortcut icon" href="logo.png?v=2">
+    
+    <!-- Google Font (Safe for GitHub Pages) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
         * {
             margin: 0;
             padding: 0;
@@ -32,15 +41,25 @@
             z-index: 100;
         }
 
+        /* Updated Logo Class for Image Integration */
         .logo {
             font-size: 1.5rem;
             font-weight: 800;
             color: #111827;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .logo span {
             color: #4f46e5;
+        }
+
+        .logo img {
+            height: 35px;
+            width: auto;
+            border-radius: 6px;
         }
 
         nav ul {
@@ -57,7 +76,7 @@
             transition: color 0.3s;
         }
 
-        nav a:hover {
+        nav a:hover, nav a.active {
             color: #4f46e5;
         }
 
@@ -115,6 +134,10 @@
             background-color: #818cf8;
             color: #111827;
         }
+        
+        .header-btn {
+            padding: 10px 20px;
+        }
 
         /* Value Proposition */
         .features {
@@ -162,7 +185,7 @@
 
         @media (max-width: 768px) {
             nav ul {
-                display: none; /* Will add a mobile menu later */
+                display: none;
             }
             .hero h1 {
                 font-size: 2.5rem;
@@ -177,17 +200,21 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">Your Online <span>Buddy</span></a>
+        <a href="index.html" class="logo">
+            <img src="logo.png?v=2" alt="Your Online Buddy Logo">
+            Your Online <span>Buddy</span>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="packages.html">Packages</a></li>
+                <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="partner.html">Partner Program</a></li>
-                <li><a href="faq.html">FAQ's</a></li>
             </ul>
         </nav>
-        <a href="#" class="btn" style="padding: 10px 20px;">Contact Us</a>
+        <a href="booking.html" class="btn header-btn">Contact Us</a>
     </header>
 
     <section class="hero">
